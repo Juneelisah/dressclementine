@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <audio id="myAudio" src="audio/music.mp3" preload="auto"></audio>
-
+    <audio id="myAudio" src="snd/music.mp3" preload="auto"></audio>
 
     <div id="startScreen">
       <h1>Click to Dress</h1>
@@ -26,26 +25,18 @@
         <div class="controls-bar">
           <div class="clothing-category">
             <span>Pants:</span>
-            <button onclick="changeClothing('pants', 'images/pants1.png')">
-              Pants 1
-            </button>
-            <button onclick="changeClothing('pants', 'images/pants2.png')">
-              Pants 2
-            </button>
-            <button onclick="removeClothing('no pants')">No pants</button>
+            <button id="pants1Button">Pants 1</button>
+            <button id="pants2Button">Pants 2</button>
+            <button id="noPantsButton">No pants</button>
           </div>
           <div class="clothing-category">
             <span>Shirts:</span>
-            <button onclick="changeClothing('shirt', 'images/shirt1.png')">
-              Shirt 1
-            </button>
-            <button onclick="changeClothing('shirt', 'images/tshirt2.png')">
-              Shirt 2
-            </button>
-            <button onclick="removeClothing('shirt')">No Shirt</button>
+            <button id="shirt1Button">Shirt 1</button>
+            <button id="shirt2Button">Shirt 2</button>
+            <button id="noShirtButton">No Shirt</button>
           </div>
         </div>
-      </div>
+        
     </main>
 
     <script src="dress.js"></script>
